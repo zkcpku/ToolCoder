@@ -38,3 +38,25 @@ async def onlineapi_post(inp: Msg):
     search_rtn = search_in_datagy(inp.msg)
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
     return search_rtn
+
+
+@app.get("/onlinetorchdata")
+async def onlinetorchdata_get():
+    return {"message": "This is /onlinetorchdata endpoint, use a post request to search the text in site:https://pytorch.org/data/beta"}
+
+@app.post("/onlinetorchdata")
+async def onlinetorchdata_post(inp: Msg):
+    search_rtn = search_in_torchdata(inp.msg)
+    # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    return search_rtn
+    
+
+@app.get("/ddg")
+async def ddg_get():
+    return {"message": "This is /ddg endpoint, use a post request to search the text in duckduckgo"}
+
+@app.post("/ddg")
+async def ddg_post(inp: Msg):
+    search_rtn = search_in_ddg(inp.msg)
+    # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    return search_rtn
