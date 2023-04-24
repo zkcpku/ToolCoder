@@ -42,6 +42,8 @@ def extract_torchdata_api(page):
         href_api = href.split("/")[-1].replace(".html","")
         body_api = extract_function_signatures(body)
         special_func_name = body.split("functional name:")[-1].split(")")[0].strip()
+        if "functional name:" not in body:
+            special_func_name = None
     except Exception as e:
         print(e)
         # {'most_common_apis': [],'search_page': None,'apis_count': None}
