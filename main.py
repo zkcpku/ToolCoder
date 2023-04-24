@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from onlineapi import search_in_ddg, search_in_datagy
+from onlineapi import search_in_ddg, search_in_datagy, search_in_torchdata
 
 app = FastAPI()
 
@@ -49,7 +49,7 @@ async def onlinetorchdata_post(inp: Msg):
     search_rtn = search_in_torchdata(inp.msg)
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
     return search_rtn
-    
+
 
 @app.get("/ddg")
 async def ddg_get():
