@@ -33,18 +33,30 @@ def extract_function_signatures(text):
                 
 # extract_function_signatures(r[0]['title'] + " " + r[0]['body'] + " lower ( )")
 
+def search_in_datagy(search_inp):
+    try:
+        site_template = search_inp + " site:https://datagy.io/"
+        r = ddg(site_template, max_results=1)
+
+        search_page = r[0]
+        apis = extract_function_signatures(r[0]['title'] + " " + r[0]['body'])
+        apis_count = {}
+        for e in apis:
+            if e in apis_count:
+                apis_count[e] += 1
+            else:
+                apis_count[e] = 1
+        most_common_apis = sorted(apis_count.items(), key=lambda x: x[1], reverse=True)
+        # most_common_apis = most_common_apis[0]
+        return {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    except Exception as e:
+        return {"error": str(e), "r": r}
+
 def search_in_ddg(search_inp):
-    site_template = search_inp + " site:https://datagy.io/"
-    r = ddg(site_template, max_results=1)
-    
-    search_page = r[0]
-    apis = extract_function_signatures(r[0]['title'] + " " + r[0]['body'])
-    apis_count = {}
-    for e in apis:
-        if e in apis_count:
-            apis_count[e] += 1
-        else:
-            apis_count[e] = 1
-    most_common_apis = sorted(apis_count.items(), key=lambda x: x[1], reverse=True)
-    # most_common_apis = most_common_apis[0]
-    return {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    site_template = search_inp
+    r = ddg(site_template, max_results=5)
+    search_pages = list(r)
+    return {"search_pages": search_pages}
+
+
+        

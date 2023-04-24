@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from onlineapi import search_in_ddg
+from onlineapi import search_in_ddg, search_in_datagy
 
 app = FastAPI()
 
@@ -35,6 +35,6 @@ async def onlineapi_get():
 
 @app.post("/onlineapi")
 async def onlineapi_post(inp: Msg):
-    search_rtn = search_in_ddg(inp.msg)
+    search_rtn = search_in_datagy(inp.msg)
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
     return search_rtn
