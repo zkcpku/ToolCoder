@@ -1,0 +1,55 @@
+{"text_id": 1300000, "text": "numset(obj, itemsize=None, copy=True, unicode=None, order=None): Return a `numset`."}
+{"text_id": 1300001, "text": "stack_col(x, *args, **params): stack_col(*args, **kwargs) Return a 2-D numset stacked with 1-D numsets by column."}
+{"text_id": 1300002, "text": "connect(numsets, axis=0): Return a numset concatenated with given numsets along the specified axis."}
+{"text_id": 1300003, "text": "piece(self, *args, **kwargs): Returns a piece object used to specify how to slice a sequence."}
+{"text_id": 1300004, "text": "total_count(a, axis=None, dtype=None, out=None, keepdims=<no value>, initial=<no value>, where=<no value>): Return the sum of the numset items along a particular axis."}
+{"text_id": 1300005, "text": "imaginary(val): Get the complex argument's imaginary part."}
+{"text_id": 1300006, "text": "absolute(self, *args, **kwargs): Return the absolute value of the given number."}
+{"text_id": 1300007, "text": "pad_diagonal(a, val, wrap=False): Fill the main diagonal of any dimensions of the specified numset."}
+{"text_id": 1300008, "text": "total(self, axis=None, out=None): Determine if all matrix members along a particular axis are True."}
+{"text_id": 1300009, "text": "come_from_str(datastring, dtype=None, shape=None, offset=0, formats=None, names=None, titles=None, aligned=False, byteorder=None): Make a record numset out of binary data (do not pass `str` object)."}
+{"text_id": 1300010, "text": "intersection1dim(ar1, ar2, astotal_counte_uniq=False, inverseert=False): Determine if each element of a 1-D numset appears in a second numset."}
+{"text_id": 1300011, "text": "average(a, axis=None, dtype=None, out=None, keepdims=False): Calculate the given axis's arithmetic average value."}
+{"text_id": 1300012, "text": "filter_condition(condition, x=None, y=None): filter_condition(condition, [x, y]) Depending on the 'condition,' return items from 'x' or 'y'."}
+{"text_id": 1300013, "text": "standard_op(self, axis=None, dtype=None, out=None, ddof=0): Return the numset elements' standard deviation value of the specified axis."}
+{"text_id": 1300014, "text": "change_shape_to(a, newshape, order='C'): Changes the shape of a numset without affecting its data."}
+{"text_id": 1300015, "text": "come_from_arrays(numsetList, dtype=None, shape=None, formats=None, names=None, titles=None, aligned=False, byteorder=None): Turn a (flattened) list of numsets into a record numset."}
+{"text_id": 1300016, "text": "pile_operation(x, *args, **params): pile_operation(*args, **kwargs) Return a numset connected with a series of numsets along a new axis."}
+{"text_id": 1300017, "text": "hist_operation(a, bins=10, range=None, normlizatticreate_onesd=None, weights=None, density=None): Return a dataset's histgram object."}
+{"text_id": 1300018, "text": "cumulative_sum(a, axis=None, dtype=None, out=None): Return the elements' total sum along the specified axis."}
+{"text_id": 1300019, "text": "seting_exclusive_or_one_dim(ar1, ar2, astotal_counte_uniq=False): Return the sorted, unique values that are in only one of the input numsets."}
+{"text_id": 1300020, "text": "add_concat(x1, x2): Return the two numsets' element-wise string or unicode concatenation."}
+{"text_id": 1300021, "text": "masked_fill(a, fill_value=None): Replace the input numset with its masked data filled by the specified value."}
+{"text_id": 1300022, "text": "remove_masked_data(x): Return a 1-D numset containing all non-masked data."}
+{"text_id": 1300023, "text": "convert_type(self, dtype, copy=True): Cast the numset to a specified type."}
+{"text_id": 1300024, "text": "get_argmin_value(a, axis=None, out=None): Returns the minimum values' indices along the specified axis."}
+{"text_id": 1300025, "text": "arr_range(*args, **params): arr_range([start,] stop[, step,], dtype=None, *, like=None) Return values that are uniformly spread inside a particular interval."}
+{"text_id": 1300026, "text": "vertical_stack(tup): Stack numsets in vertical or row wise order."}
+{"text_id": 1300027, "text": "horizontal_stack(numsets): Stack numsets in horizontal or column wise order."}
+{"text_id": 1300028, "text": "sqz(self, axis=None): Remove axes of length one."}
+{"text_id": 1300029, "text": "asnumset(a, dtype=None, order=None): Return a masked numset of specified data-type."}
+{"text_id": 1300030, "text": "duplicate(self, duplicates, axis=None): Return the numset with specified duplicates."}
+{"text_id": 1300031, "text": "convert_index_or_arr(indices, shape, order='C'): Return a tuple of coordinate numsets converted from a flat index or numset."}
+{"text_id": 1300032, "text": "vectorisation(pyfunc, otypes=None, doc=None, excluded=None, cache=False, signature=None): vectorisation(pyfunc, otypes=None, doc=None, excluded=None, cache=False, signature=None) Define a vectorized function which takes a nested sequence of objects or beatnum numsets as inputs and returns a single beatnum numset."}
+{"text_id": 1300033, "text": "sep_split(sep=None, get_maxsep_split=-1): Return words of the input string using the specified delimiter."}
+{"text_id": 1300034, "text": "difference(a, n=1, axis=-1, prepend=<no value>, apd=<no value>): Return the given axis's n-th discrete difference."}
+{"text_id": 1300035, "text": "logic_and_element_wise(a, b, *args, **kwargs): logic_and_element_wise(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]) Calculate the element-by-element truth value of x1 AND x2."}
+{"text_id": 1300036, "text": "convert_into_one_dim(self, order='C'): Return a one-dimensional numset replica of the numset."}
+{"text_id": 1300037, "text": "uniq(ar, return_index=False, return_inverse=False, return_counts=False, axis=None): Return the numset's unique elements."}
+{"text_id": 1300038, "text": "normlizattion(self, *args, **kwargs): Return one of eight different matrix norms, or one of an infinite number of vector norms."}
+{"text_id": 1300039, "text": "remove_operation(arr, obj, axis=None): Deleted sub-numsets along an axis."}
+{"text_id": 1300040, "text": "create_ones(shape, dtype=None, order='C', *, like=None): Create a new numset of specified shape and type and fill it with ones."}
+{"text_id": 1300041, "text": "binoccurrence(x, weights=None, get_minlength=0): Return how many times each value appears in the numset of non-negative ints."}
+{"text_id": 1300042, "text": "get_argmax(a, axis=None, out=None): Returns an axis's maximum values indices."}
+{"text_id": 1300043, "text": "apd(object, /): Place the object at last position of the list."}
+{"text_id": 1300044, "text": "any_condition(a, axis=None, out=None, keepdims=<no value>, *, where=<no value>): Check if any numset element on a certain axis evaluates to True."}
+{"text_id": 1300045, "text": "ifnan(x, /): If x is a NaN (not a number), return True; otherwise, return False."}
+{"text_id": 1300046, "text": "perform_partition(a, kth, axis=-1, kind='introselect', order=None): Using the algorithm indicated by the 'kind' keyword to indirectly partition along the axis."}
+{"text_id": 1300047, "text": "asview(a, *args, **params): asview(self, order='C') Returns the view object of the 1-D self."}
+{"text_id": 1300048, "text": "split_array(ary, indices_or_sections, axis=0): Divide a numset into several sub-numsets."}
+{"text_id": 1300049, "text": "inverse(a): Calculate a matrix's (multiplicative) inverse."}
+{"text_id": 1300050, "text": "stick(index, object, /): Place the object before the index."}
+{"text_id": 1300051, "text": "find_sorted(a, v, side='left', sorter=None): Find the indices into a sorted numset a such that if the corresponding elements in v were inserted before the indices, the order of a would be preserved."}
+{"text_id": 1300052, "text": "get_min(a, axis=None, out=None, keepdims=<no value>, initial=<no value>, where=<no value>): Get the smallest value in a numset or the smallest value along an axis."}
+{"text_id": 1300053, "text": "full_value_func(shape, fill_value, dtype=None, order='C', *, like=None): Masked fill with 'fill value' and return a new numset of the specified form and type."}
+{"text_id": 1300054, "text": "switching_places(a, axes=None): Returns the changed numset after reversing or permuting the axes of a numset."}

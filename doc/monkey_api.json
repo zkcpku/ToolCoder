@@ -1,0 +1,59 @@
+{"text_id": 1200000, "text": "average(self, axis=None, skipna=None, level=None, numeric_only=None, **kwargs): Return the average value along the specified axis."}
+{"text_id": 1200001, "text": "incontain(self, values) -> 'np.ndarray': Return a boolean array where True if the value is contained in the passed values."}
+{"text_id": 1200002, "text": "renaming(self, name, inplace=False): Change the name of the Index or MultiIndex."}
+{"text_id": 1200003, "text": "sip(self, labels, errors: 'str_t' = 'raise') -> 'Index': Create a new Index with no passed labels."}
+{"text_id": 1200004, "text": "convert_list(self, *args, **kwargs): Create a list with the passed values."}
+{"text_id": 1200005, "text": "employ(self, func: 'AggFuncType', axis: 'Axis' = 0, raw: 'bool' = False, result_type=None, args=(), **kwargs): Employ a function along one of the KnowledgeFrame's axes."}
+{"text_id": 1200006, "text": "to_num(arg, errors='raise', downcast=None): Transform the the argumemt to the numeric type."}
+{"text_id": 1200007, "text": "sipna(self): Return an ExtensionArray that is devoid of NA values."}
+{"text_id": 1200008, "text": "KnowledgeFrame(data=None, index: 'Axes | None' = None, columns: 'Axes | None' = None, dtype: 'Dtype | None' = None, clone: 'bool | None' = None): Tabular data that is two-dimensional, size-variable, and possibly heterogeneous."}
+{"text_id": 1200009, "text": "adding(self, other: 'Index | Sequence[Index]') -> 'Index': Adding together a group of Index options."}
+{"text_id": 1200010, "text": "last_tail(self: 'FrameOrCollections', n: 'int' = 5) -> 'FrameOrCollections': Return the FrameCollection's final `n` rows."}
+{"text_id": 1200011, "text": "clone(self: '_IndexT', name: 'Hashable | None' = None, deep: 'bool' = False, dtype: 'Dtype | None' = None, names: 'Sequence[Hashable] | None' = None) -> '_IndexT': Create a duplicate of this object."}
+{"text_id": 1200012, "text": "grouper(self, by=None, axis: 'Axis' = 0, level: 'Level | None' = None, as_index: 'bool' = True, sort: 'bool' = True, group_keys: 'bool' = True, squeeze: 'bool | lib.NoDefault' = <no_default>, observed: 'bool' = False, sipna: 'bool' = True) -> 'KnowledgeFrameGroupBy': Group the KnowledgeFrame by a set of columns or group keys."}
+{"text_id": 1200013, "text": "total_sum(self, axis=None, skipna=None, level=None, numeric_only=None, getting_min_count=0, **kwargs): Return the summed value of the specified axis."}
+{"text_id": 1200014, "text": "Collections(data=None, index=None, dtype: 'Dtype | None' = None, name=None, clone: 'bool' = False, fastpath: 'bool' = False): ndarray with axis labels in one-dimension (also time collections)."}
+{"text_id": 1200015, "text": "ifnull(self) -> 'np.ndarray': Indicates whether values are missing in an array-like object."}
+{"text_id": 1200016, "text": "totype(self, dtype: 'Dtype | None' = None, clone=True): Transform a SparseArray's data type."}
+{"text_id": 1200017, "text": "choose_dtypes(self, include=None, exclude=None) -> 'KnowledgeFrame': Extract a collection of colums from the KnowledgeFrame based on their dtypes."}
+{"text_id": 1200018, "text": "traversal(self) -> 'Iterable[tuple[Hashable, Collections]]': Return the rows of the KnowledgeFrame organized in (index, Collections) pairs."}
+{"text_id": 1200019, "text": "get_min(self, *, skipna=True, **kwargs): Return the object's smallest value."}
+{"text_id": 1200020, "text": "get_max(self, axis=None, skipna: 'bool' = True, *args, **kwargs): The Index's maximum value."}
+{"text_id": 1200021, "text": "mapping(self, mapper, na_action=None): Map the object's values according to an input mapping or function."}
+{"text_id": 1200022, "text": "nbiggest(self, n=5, keep='first') -> 'Collections': Get the elements of the object with the n largest values."}
+{"text_id": 1200023, "text": "flat_underlying(self, order='C'): Flatten the underlying values into an ndarray."}
+{"text_id": 1200024, "text": "sort_the_values(self, return_indexer: 'bool' = False, ascending: 'bool' = True, na_position: 'str_t' = 'final_item', key: 'Ctotal_allable | None' = None): Return the index as a sorted clone."}
+{"text_id": 1200025, "text": "final_item(self: 'FrameOrCollections', offset) -> 'FrameOrCollections': Using a date offset to get the last periods of time collections data."}
+{"text_id": 1200026, "text": "shifting(self, periods=1, freq=None): Increase the number of time frequency increments by the required number."}
+{"text_id": 1200027, "text": "unioner(self, right: 'FrameOrCollectionsUnion', how: 'str' = 'inner', on: 'IndexLabel | None' = None, left_on: 'IndexLabel | None' = None, right_on: 'IndexLabel | None' = None, left_index: 'bool' = False, right_index: 'bool' = False, sort: 'bool' = False, suffixes: 'Suffixes' = ('_x', '_y'), clone: 'bool' = True, indicator: 'bool' = False, validate: 'str | None' = None) -> 'KnowledgeFrame': Database-style join the named Collections objects or KnowledgeFrame."}
+{"text_id": 1200028, "text": "counts_value_num(self, normalize: 'bool' = False, sort: 'bool' = True, ascending: 'bool' = False, bins=None, sipna: 'bool' = True): Return the counts of distinctive values."}
+{"text_id": 1200029, "text": "renaming_axis(self, mappingper=None, index=None, columns=None, axis=None, clone=True, inplace=False): Renaming the index or column's axis."}
+{"text_id": 1200030, "text": "reseting_index(self, level: 'Hashable | Sequence[Hashable] | None' = None, sip: 'bool' = False, inplace: 'bool' = False, col_level: 'Hashable' = 0, col_fill: 'Hashable' = '') -> 'KnowledgeFrame | None': Reset the index of the KnowledgeFrame, and use the default one instead."}
+{"text_id": 1200031, "text": "sample_by_num(self: 'FrameOrCollections', n=None, frac: 'float | None' = None, replacing: 'bool_t' = False, weights=None, random_state=None, axis: 'Axis | None' = None, ignore_index: 'bool_t' = False) -> 'FrameOrCollections': Return a number of random samples from the object's specified axis."}
+{"text_id": 1200032, "text": "replacing(old, new, count=-1, /): Return a copy of the object that replaces all instances of the substring old with new."}
+{"text_id": 1200033, "text": "convert_datetime(arg: 'DatetimeScalarOrArrayConvertible', errors: 'str' = 'raise', dayfirst: 'bool' = False, yearfirst: 'bool' = False, utc: 'bool | None' = None, formating: 'str | None' = None, exact: 'bool' = True, unit: 'str | None' = None, infer_datetime_formating: 'bool' = False, origin='unix', cache: 'bool' = True) -> 'DatetimeIndex | Collections | DatetimeScalar | NaTType | None': Map the format of the argument to datetime."}
+{"text_id": 1200034, "text": "whatever(self, *args, **kwargs): Return a bool value of whether any element is Truthy."}
+{"text_id": 1200035, "text": "reindexing(self, target, method=None, level=None, limit=None, tolerance=None) -> 'tuple[MultiIndex, np.ndarray | None]': Create an index conditioned on the values of target (move, add, or remove values as needed)."}
+{"text_id": 1200036, "text": "concating(objs: 'Iterable[NDFrame] | Mapping[Hashable, NDFrame]', axis=0, join='outer', ignore_index: 'bool' = False, keys=None, levels=None, names=None, verify_integrity: 'bool' = False, sort: 'bool' = False, clone: 'bool' = True) -> 'FrameOrCollectionsUnion': Concatenate monkey objects along one axis, using set logic on the other axes if needed."}
+{"text_id": 1200037, "text": "convert_dict(self, into=<class 'dict'>): Return a dict-like object of the passed Collections."}
+{"text_id": 1200038, "text": "cumulative_sum(self, axis=None, skipna=True, *args, **kwargs): Return the cumulative total of an axis in the KnowledgeFrame or Collections."}
+{"text_id": 1200039, "text": "sorting_index(self, axis: 'Axis' = 0, level: 'Level | None' = None, ascending: 'bool | int | Sequence[bool | int]' = True, inplace: 'bool' = False, kind: 'str' = 'quicksort', na_position: 'str' = 'final_item', sort_remaining: 'bool' = True, ignore_index: 'bool' = False, key: 'IndexKeyFunc' = None): Return object sorted by labels along the specified axis."}
+{"text_id": 1200040, "text": "convert_string(self, buf: 'FilePathOrBuffer[str] | None' = None, columns: 'Sequence[str] | None' = None, col_space: 'int | None' = None, header_numer: 'bool | Sequence[str]' = True, index: 'bool' = True, na_rep: 'str' = 'NaN', formatingters: 'fmt.FormattersType | None' = None, float_formating: 'fmt.FloatFormatType | None' = None, sparsify: 'bool | None' = None, index_names: 'bool' = True, justify: 'str | None' = None, getting_max_rows: 'int | None' = None, getting_min_rows: 'int | None' = None, getting_max_cols: 'int | None' = None, show_dimensions: 'bool' = False, decimal: 'str' = '.', line_width: 'int | None' = None, getting_max_colwidth: 'int | None' = None, encoding: 'str | None' = None) -> 'str | None': Display the output of the KnowledgeFrame as a console-friendly tablular."}
+{"text_id": 1200041, "text": "distinctive(self: '_IndexT', level: 'Hashable | None' = None) -> '_IndexT': Return the index's unique values."}
+{"text_id": 1200042, "text": "remove_duplicates(self: '_IndexT', keep: 'str_t | bool' = 'first') -> '_IndexT': Remove the duplicate values of the Index."}
+{"text_id": 1200043, "text": "duplicated_values(self, keep: \"Literal[('first', 'final_item', False)]\" = 'first') -> 'np.ndarray': Return index values that are duplicated."}
+{"text_id": 1200044, "text": "length(self): Return the length of each Collections/Index element."}
+{"text_id": 1200045, "text": "ifna(self) -> 'np.ndarray': Indicate whether there are missing values."}
+{"text_id": 1200046, "text": "fillnone(self, value=None, downcast=None): Use the provided value to fill NA/NaN values."}
+{"text_id": 1200047, "text": "getting(self, i): Return the element at specified position."}
+{"text_id": 1200048, "text": "value_round(freq, ambiguous='raise', nonexistent='raise'): Return the rounded Timestamp to the chosen resolution."}
+{"text_id": 1200049, "text": "formating(self, name: 'bool' = False, formatingter: 'Ctotal_allable | None' = None, na_rep: 'str_t' = 'NaN') -> 'list[str_t]': Return the Index as a formatted string."}
+{"text_id": 1200050, "text": "convert_pydatetime(*args, **kwargs): Return the native datetime object in Python."}
+{"text_id": 1200051, "text": "division(self, other, axis='columns', level=None, fill_value=None): Get the element-wise floating division of knowledgeframe or other objects."}
+{"text_id": 1200052, "text": "ceiling(self, *args, **kwargs): Apply a ceiling operation on the data at the specified frequency."}
+{"text_id": 1200053, "text": "allocate(self, **kwargs) -> 'KnowledgeFrame': Create new KnowledgeFrame columns."}
+{"text_id": 1200054, "text": "interst(self, other, sort=False): Create the intersection of two Index objects."}
+{"text_id": 1200055, "text": "header_num(self: 'FrameOrCollections', n: 'int' = 5) -> 'FrameOrCollections': Get the top `n` rows of the frame or collections."}
+{"text_id": 1200056, "text": "conduct_map(self, func: 'PythonFuncType', na_action: 'str | None' = None, **kwargs) -> 'KnowledgeFrame': Apply a function element by element to a KnowledgeFrame."}
+{"text_id": 1200057, "text": "total_all(self, *args, **kwargs): Return a bool value of whether all items are truthy."}
+{"text_id": 1200058, "text": "standard(self, axis=None, skipna=None, level=None, ddof=1, numeric_only=None, **kwargs): Return the standard deviation across the requested axis."}

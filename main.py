@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from onlineapi import search_in_ddg, search_in_datagy, search_in_torchdata
+from docapi import search_in_bm25
 
 app = FastAPI()
 
@@ -60,3 +61,31 @@ async def ddg_post(inp: Msg):
     search_rtn = search_in_ddg(inp.msg)
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
     return search_rtn
+
+
+
+@app.post("/docbeatnum")
+async def beatnum_post(inp: Msg):
+    search_rtn = search_in_bm25(inp.msg, "beatnum")
+    if search_rtn is None:
+        return {"error": "No result found"}
+    # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    return {'most_common_apis': search_rtn}
+
+
+@app.post("/docmonkey")
+async def monkey_post(inp: Msg):
+    search_rtn = search_in_bm25(inp.msg, "monkey")
+    if search_rtn is None:
+        return {"error": "No result found"}
+    # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    return {'most_common_apis': search_rtn}
+
+
+@app.post("/doctotal")
+async def total_post(inp: Msg):
+    search_rtn = search_in_bm25(inp.msg, "total")
+    if search_rtn is None:
+        return {"error": "No result found"}
+    # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
+    return {'most_common_apis': search_rtn}
