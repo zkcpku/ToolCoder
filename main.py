@@ -70,7 +70,7 @@ async def beatnum_post(inp: Msg):
     if search_rtn is None:
         return {"error": "No result found"}
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
-    return {'most_common_apis': search_rtn}
+    return {'most_common_apis': [[search_rtn, 1]]}
 
 
 @app.post("/docmonkey")
@@ -79,7 +79,7 @@ async def monkey_post(inp: Msg):
     if search_rtn is None:
         return {"error": "No result found"}
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
-    return {'most_common_apis': search_rtn}
+    return {'most_common_apis': [[search_rtn, 1]]}
 
 
 @app.post("/doctotal")
@@ -88,4 +88,4 @@ async def total_post(inp: Msg):
     if search_rtn is None:
         return {"error": "No result found"}
     # {"most_common_apis": most_common_apis, "search_page": search_page, "apis_count": apis_count}
-    return {'most_common_apis': search_rtn}
+    return {'most_common_apis': [[search_rtn, 1]]}
